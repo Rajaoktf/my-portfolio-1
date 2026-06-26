@@ -31,6 +31,7 @@ export default function Navbar() {
         <a href="#" className="font-mono text-sm font-medium text-accent tracking-widest uppercase">
           {/* &lt;dev /&gt; */}
           Raja Oktafrianto
+          {/* < /> */}
         </a>
 
         {/* <button onClick={() => setLanguage(language === "id" ? "en" : "id")}>{language === "id" ? "EN" : "ID"}</button> */}
