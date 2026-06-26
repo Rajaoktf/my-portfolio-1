@@ -5,8 +5,9 @@ import App from "./App";
 import { LanguageProvider } from "./i18n/LanguageContext";
 
 createRoot(document.getElementById("root")!).render(
-  <LanguageProvider>
-    <App />
-  </LanguageProvider>,
+  <StrictMode>
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+  </StrictMode>,
 );
-

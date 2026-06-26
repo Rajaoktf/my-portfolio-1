@@ -47,7 +47,7 @@ export default function Hero() {
   const techs = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Node.js", "Tailwind", "Next.js", "Git", "GitHub"];
 
   return (
-    <section className="relative min-h-screen flex flex-col items-start justify-center">
+    <section className="relative flex min-h-svh flex-col items-start justify-center overflow-hidden lg:min-h-screen">
       {/* Grid background */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -60,18 +60,18 @@ export default function Hero() {
       {/* Glow */}
       <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-accent opacity-5 blur-[120px]" />
 
-      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 px-6 pb-24 pt-20 lg:grid-cols-[minmax(0,1fr)_minmax(360px,480px)] lg:pb-16">
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-10 px-4 pb-10 pt-28 sm:px-6 md:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(340px,480px)] lg:pb-24 lg:pt-20">
         <div>
           <p className="mb-6 font-mono text-xs tracking-[0.3em] text-text-muted uppercase animate-fade-up">Hello.</p>
 
-          <h1 className="mb-4 text-6xl font-semibold leading-tight tracking-tight text-text md:text-8xl animate-fade-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
+          <h1 className="mb-4 text-5xl font-semibold leading-tight tracking-tight text-text sm:text-6xl md:text-7xl xl:text-8xl animate-fade-up" style={{ animationDelay: "0.1s", opacity: 0 }}>
             I'm Raja
             <br />
-            <span className="text-accent">Oktafrianto</span>
+            <span className="break-words text-accent">Oktafrianto</span>
           </h1>
 
           <div className="mb-10 flex items-center gap-3 animate-fade-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
-            <span className="font-mono text-xl text-text-muted md:text-2xl">
+            <span className="font-mono text-lg text-text-muted sm:text-xl md:text-2xl">
               {displayed}
               <span className="animate-blink text-accent">|</span>
             </span>
@@ -82,12 +82,12 @@ export default function Hero() {
             Saya membangun aplikasi web modern menggunakan React, TypeScript, dan Tailwind CSS dengan fokus pada performa, pengalaman pengguna, dan kode yang mudah dipelihara.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: "0.4s", opacity: 0 }}>
-            <a href="#projects" className="group flex items-center gap-2 bg-accent px-6 py-3 font-mono text-sm font-medium text-bg transition-all hover:bg-accent-dim">
+          <div className="flex flex-col gap-3 animate-fade-up sm:flex-row sm:flex-wrap sm:items-center sm:gap-4" style={{ animationDelay: "0.4s", opacity: 0 }}>
+            <a href="#projects" className="group flex items-center justify-center gap-2 bg-accent px-6 py-3 font-mono text-sm font-medium text-bg transition-all hover:bg-accent-dim sm:justify-start">
               Lihat Projek
               <ArrowDown size={14} className="transition-transform group-hover:translate-y-0.5" />
             </a>
-            <a href="#contact" className="border border-border px-6 py-3 font-mono text-sm text-text-muted transition-all hover:border-accent hover:text-accent">
+            <a href="#contact" className="border border-border px-6 py-3 text-center font-mono text-sm text-text-muted transition-all hover:border-accent hover:text-accent sm:text-left">
               Hubungi Saya
             </a>
           </div>
@@ -107,9 +107,9 @@ export default function Hero() {
         </div> */}
         </div>
 
-        <div className="animate-fade-up" style={{ animationDelay: "0.5s", opacity: 0 }}>
+        <div className="w-full min-w-0 animate-fade-up" style={{ animationDelay: "0.5s", opacity: 0 }}>
           <div className="overflow-hidden rounded-lg border border-border bg-surface/70 shadow-2xl shadow-black/40 backdrop-blur">
-            <div className="flex items-center justify-between border-b border-border px-5 py-4">
+            <div className="flex items-center justify-between border-b border-border px-4 py-3 sm:px-5 sm:py-4">
               <div className="flex items-center gap-2">
                 <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
                 <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
@@ -118,8 +118,8 @@ export default function Hero() {
               <span className="font-mono text-xs text-text-muted">code.tsx</span>
             </div>
 
-            <div className="overflow-x-auto px-5 py-5 font-mono text-sm leading-7">
-              <div className="grid min-w-[420px] grid-cols-[2rem_1fr] gap-x-4">
+            <div className="overflow-x-auto px-4 py-4 font-mono text-xs leading-6 sm:px-5 sm:py-5 sm:text-sm sm:leading-7">
+              <div className="grid min-w-[340px] grid-cols-[1.5rem_1fr] gap-x-3 sm:min-w-[420px] sm:grid-cols-[2rem_1fr] sm:gap-x-4">
                 <span className="select-none text-right text-text-dim">1</span>
                 <code>
                   <span className="text-[#c678dd]">const</span> <span className="text-[#61afef]">Raja</span> <span className="text-text-muted">=</span> <span className="text-[#e5c07b]">()</span> <span className="text-[#c678dd]">=&gt;</span> <span className="text-text">{"{"}</span>
@@ -175,7 +175,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 border-t border-border px-5 py-4 font-mono text-xs text-text-muted sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-col gap-3 border-t border-border px-4 py-4 font-mono text-xs text-text-muted sm:flex-row sm:items-center sm:justify-between sm:px-5">
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#28c840]" />
                 <span>Available for work</span>
@@ -189,7 +189,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden border-y border-border bg-bg/70 py-5 backdrop-blur">
+      <div className="w-full overflow-hidden border-y border-border bg-bg/70 py-4 backdrop-blur lg:absolute lg:bottom-0 lg:left-0 lg:py-5">
         <motion.div className={`flex w-max gap-8 px-8 animate-marquee ${marqueeDirection === "right" ? "animate-marquee-reverse" : ""}`}>
           {[...techs, ...techs].map((tech, index) => (
             <span key={`${tech}-${index}`} className="group flex items-center gap-8 font-mono text-sm text-text-muted whitespace-nowrap transition-colors hover:text-accent">
