@@ -18,7 +18,7 @@ function useInView(threshold = 0.2) {
 }
 
 const socials = [
-  { icon: Code2, label: "GitHub", href: "https://github.com/razzto", handle: "@rajaoktf_" },
+  { icon: Code2, label: "GitHub", href: "https://github.com/Rajaoktf", handle: "@rajaoktf_" },
   { icon: Link, label: "LinkedIn", href: "https://www.linkedin.com/in/raja-oktafrianto-82086821a/", handle: "Raja Oktafrianto" },
   { icon: Globe, label: "Instagram", href: "https://www.instagram.com/rajaoktf_/", handle: "@rajaoktf" },
   { icon: Mail, label: "Email", href: "http://rajaoktafrianto2@gmail.com/", handle: "rajaoktafrianto2@gmail.com" },
